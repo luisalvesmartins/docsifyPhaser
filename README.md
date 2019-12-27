@@ -1,6 +1,6 @@
 # Docsify Phaser Plugin
 
-Run Phaser code directly from a Docsify MD file.
+Run [Phaser](https://phaser.io) code directly from a [Docsify](https://docsify.js.org) MD file.
 
 ![demo](images/demo.png)
 
