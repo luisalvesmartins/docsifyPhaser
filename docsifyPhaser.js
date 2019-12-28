@@ -24,7 +24,6 @@ function docsifyPhaser(hook,vm){
           content=content.substr(0,p1) + "<div id=" +this.divName + "></div>" + content.substr(p2+18);
         }
       }
-      console.log(content)
       return content;
     });
 
