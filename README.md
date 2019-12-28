@@ -13,12 +13,12 @@ Using the plugin, this is the standard Phaser javascript demo. The code is writt
 
 You just need to include the Phaser javascript lib in the index.html and the plugin.
 
-<!-- PHASER -->
+<!-- PHASER(divname) -->
     var config = {
         type: Phaser.AUTO,
         width: 800,
         height: 600,
-        parent:'phaserapp',
+        parent:'divname',
         physics: {
             default: 'arcade',
     ...
@@ -34,23 +34,17 @@ And here the text continues
 In the Docsify index.html include the Phaser and DocsifyPhaser plugin by adding two script references:
 
 ```html
-    <!-- Phaser -->
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
-    <!-- DocsifyPhaser plugin -->
-    <script src="docsifyPhaser.js"></script>
+<!-- Phaser -->
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+<!-- DocsifyPhaser plugin -->
+<script src="docsifyPhaser.js"></script>
 ```
 
-In the Phaser configuration you'll need to refer to the parent 'phaserapp'
-
-```html
-    var config = {
-        ...
-        parent:'phaserapp',
-        ...
-```
-
-That's all.
+You can add as many phaser blocks as you wish. Just ensure all the parent names are different.
 
 ## Try a demo
 
-In the demo folder you'll find a complete sample.
+In the demo folder you'll find a complete sample. Run docsify as is from that folder:
+```
+docsify serve .
+```
